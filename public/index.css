@@ -49,3 +49,25 @@ p {
 #rsvp {
   background-color: #7d6f3e;
 }
+
+
+/* large desktop */
+@media(min-width: 1280px) {}
+
+/* tablet */
+@media (max-width: 768px) {}
+
+/* phone */
+@media (max-width: 576px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .font-big {
+    font-size: 2.5rem;
+  }
+
+  .font-small {
+    font-size: 1.5rem;
+  }
+}
