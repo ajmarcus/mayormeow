@@ -1,268 +1,51 @@
 /* all styles */
-a {
-    color: black;
-  }
-  img {
-    max-width: 98%;
-  }
-  body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-  ol {
-    list-style: none;
-    display: flex;
-    padding: 0;
-  }
-  li {
-    margin: 0.5rem;
-  }
-  p {
-    margin: 0.5rem 0;
-    padding: 0;
-    line-height: 2.2rem;
-  }
-  button {
-    color: white;
-    background-color: black;
-    font-size: 1rem;
-    border: 0;
-    padding: 1rem 1.5rem;
-    margin: 1rem 1rem;
-  }
-  button:hover {
-    color: grey;
-  }
-  iframe {
-    border-width: 0px;
-    border-style: none;
-    width: 100%;
-    height: 100%;
-  }
-  /* navigation */
-  nav {
-    background-color: rgb(124, 224, 232);
-    filter: drop-shadow(1px 2px 6px grey);
-  }
-  nav ol {
-    justify-content: space-around;
-    margin: 0;
-    padding: 0.6rem 1rem;
-  }
-  nav a {
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  nav a:hover {
-    color: white;
-  }
-  nav a:visited {
-    color: black;
-  }
-  
-  /* background image */
-  body {
-    background-image: url('img/main.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top;
-  }
-  /* content */
-  #content {
-    font-size: 2rem;
-    text-align: center;
-    max-width: 100%;
-  }
-  /* cards */
-  .card {
-    background-color: rgba(256,256,256,0.88);
-    filter: drop-shadow(1px 3px 6px grey);
-    max-width: 70%;
-    margin: 8rem auto 8rem auto;
-    padding: 1rem 2rem 2rem 2rem;
-  }
-  .show-phone {
-    display: none;
-  }
-  /* home */
-  #home {
-    background-color: rgba(255,255,255,0.88);
-    margin: 50% auto 15% auto;
-    max-width: 70%;
-    padding: 1rem 1rem;
-    filter: drop-shadow(1px 3px 6px grey);
-  }
-  #home-title {
-    font-weight: bold;
-    text-align: center;
-  }
-  #home-details {
-    justify-content: space-around;
-    text-align: center;
-  }
-  /* rsvp */
-  #rsvp {
-    margin: 0% auto 0% auto;
-    max-width: 70%;
-    height: 1150px;
-  }
-  /* stay */
-  #hotel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-  }
-  #hotel-address {
-    width: 50%;
-    font-size: 1.8rem;
-  }
-  #hotel-image {
-    width: 50%;
-  }
-  /* activities */
-  #activities {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 70%;
-  }
-  #map iframe {
-    height: 600px;
-    width: 100%;
-  }
-  /* gifts */
-  .gift {
-    margin: auto;
-    padding: 1rem 0.2rem;
-    min-width: 100%;
-    max-width: 400px;
-  }
-  /* photos */
-  #photos {
-    margin: 20% auto 10% auto;
-    max-width: 1120px;
-    text-align: center;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  /* contact */
-  #contact {
-    text-align: center;
-    margin: 10% auto 15% auto;
-    max-width: 90%;
-  }
-  #contact-form {
-    max-width: 300px;
-    margin: 2rem auto 0 auto;
-  }
-  #contact-form input {
-    border: 1px solid rgba(0,0,0,0.1);
-    font-size: 1.5rem;
-    margin: 0.2rem auto;
-    padding: 0.4rem;
-  }
-  #field {
-    display: none;
-  }
-  #contact-form button {
-    margin: 0.2rem auto 0 auto;
-  }
-  #message {
-    height: 6rem;
-  }
-  /* footer */
-  #footer {
-    background-color: rgb(124, 224, 232);
-    height: 5rem;
-  }
-  /* scale background image on smaller screens */
-  @media (max-width: 1280px) {
-    body {
-      background-size: 100%;
-    }
-  }
-  /* large desktop */
-  @media(min-width: 1280px) {
-    #home {
-      margin: 45% auto 15% auto;
-    }
-  }
-  /* tablet */
-  @media (max-width: 768px) {
-    p {
-      margin: 0.5rem 0;
-      padding: 0;
-      line-height: 2rem;
-    }
-    .hide-tablet {
-      display: none;
-    }
-    #the-wedding {
-      padding: 2rem 1rem;
-    }
-    .gallery {
-      grid-template-columns: 1fr;
-    }
-    #content {
-      font-size: 1.5rem;
-    }
-    #activities {
-      margin: 0% auto 0% auto;
-      text-align: center;
-      max-width: 98%;
-    }
-    #rsvp {
-      margin: 0% auto 0% auto;
-      max-width: 70%;
-      height: 1200px;
-    }
-    #hotel {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1.5rem;
-    }
-    #hotel-address {
-      width: 100%;
-      font-size: 1.8rem;
-    }
-    #hotel-image {
-      width: 100%;
-    }
-  }
-  /* phone */
-  @media (max-width: 576px) {
-    .hide-phone {
-      display: none;
-    }
-    .show-phone {
-      display: inline;
-    }
-    button {
-      margin: 1rem 0rem;
-    }
-    nav ol {
-      justify-content: space-around;
-      margin: 0;
-      padding: 0.35rem;
-    }
-    #activities iframe {
-      height: 300px;
-    }
-    #rsvp {
-      margin: 0% auto 0% auto;
-      max-width: 100%;
-      height: 1050px;
-    }
-    #neighborhoods {
-      text-align: left;
-      font-size: 1.3rem;
-      padding-top: 1rem;
-    }
-  }
+@font-face {
+  font-family: 'custom';
+  src: url('font/Recoleta-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'custom', serif;
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0.2rem;
+}
+
+.font-big {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.font-small {
+  font-size: 3rem;
+}
+
+.card {
+  padding: 20% 15%;
+  color: rgb(241, 239, 233);
+  max-width: 100%;
+}
+
+#names {
+  background-color: rgb(18, 51, 74);
+  text-align: left;
+}
+
+#details {
+  background-color: rgb(222, 159, 122);
+}
+
+#rsvp {
+  background-color: #7d6f3e;
+}
